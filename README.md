@@ -58,6 +58,18 @@ sudo systemctl start starlight containerd
 ```
 
 #### 실험 
-RTT=100ms부터 100ms 단위로 1000ms까지 증가시키면서 redis 6.2.1 컨테이너의 배포 속도를 측정함
+RTT=100ms부터 100ms 단위로 1000ms까지 증가시키면서 redis 6.2.1 컨테이너의 배포 시간 측정함
 
+|RTT|배포 시간|
+|---|---|
+|100ms|0s|
+|200ms|0s|
+|300ms|0s|
+|400ms|0s|
+|500ms|0s|
+|600ms|0s|
+|700ms|0s|
+|800ms|0s|
+|900ms|0s|
+|1000ms|0s|
 
