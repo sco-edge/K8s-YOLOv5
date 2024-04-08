@@ -54,6 +54,4 @@ sudo tc qdisc add dev ens33 root netem delay 200ms
 rm -rf test-redis-data/
 sudo ctr container rm instance3
 sudo ./demo/reset.sh
-sudo systemctl start starlight containerd
-```
-
+sudo systemc행
