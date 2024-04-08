@@ -36,5 +36,10 @@ curl http://cloud.cluster.local:5000/v2/
 sudo tc qdisc del dev ens33 root
 sudo tc -s qdisc ls dev wlan0
 ```
+RTT 확인
+```
+ping -c 3 8.8.8.8
+```
+
 
 
