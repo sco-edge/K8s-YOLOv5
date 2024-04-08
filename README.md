@@ -40,6 +40,10 @@ RTT 확인
 ```
 ping -c 3 8.8.8.8
 ```
+RTT 설정(200ms)
+```
+sudo tc qdisc add dev ens33 root netem delay 200ms
+```
 
 
 
