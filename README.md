@@ -51,7 +51,7 @@ sudo tc qdisc add dev ens33 root netem delay 200ms
 #### 초기화
 실험 1회 수행시 다음을 반복함
 ```
-rm -rf test-redis-data/ && \
+rm -rf /tmp/test-redis-data/ && \
 sudo ctr container rm instance3 && \
 sudo ./demo/reset.sh && \
 sudo systemctl start starlight containerd
