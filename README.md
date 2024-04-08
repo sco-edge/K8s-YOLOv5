@@ -10,7 +10,7 @@ VirtualBox with Ubuntu 22.04.4 LTS and `starlight v0.3.2`
 Edge  
 WSL with Ubuntu 22.04.3 LTS and `starlight v0.3.2` 
 
-### 설치 진행 상황
+### 설치
 
 #### Cloud
 
@@ -24,3 +24,17 @@ curl http://cloud.cluster.local:5000/v2/
 ```
 
 #### Edge
+
+
+
+### 실험
+
+#### tc 사용법
+
+설정 초기화 및 확인
+```
+sudo tc qdisc del dev ens33 root
+sudo tc -s qdisc ls dev wlan0
+```
+
+
