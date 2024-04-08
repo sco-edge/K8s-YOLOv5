@@ -13,13 +13,6 @@ WSL with Ubuntu 22.04.3 LTS and `starlight v0.3.2`
 ### 설치
 
 #### Cloud
-```
-CONTAINER ID   IMAGE                                  COMMAND                  CREATED             STATUS          PORTS                                       NAMES
-ab6e266e97b7   adminer:latest                         "entrypoint.sh php -…"   About an hour ago   Up 5 seconds    0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   compose_dbadmin_1
-556c2a40ec67   ghcr.io/mc256/starlight/proxy:latest   "/opt/starlight-proxy"   About an hour ago   Up 2 seconds    0.0.0.0:8090->8090/tcp, :::8090->8090/tcp   compose_proxy_1
-c44da6f90056   postgres:latest                        "docker-entrypoint.s…"   About an hour ago   Up 15 seconds   0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   compose_db_1
-fe471bfd1141   registry:2                             "/entrypoint.sh /etc…"   About an hour ago   Up 15 seconds   0.0.0.0:5000->5000/tcp, :::5000->5000/tcp   compose_registry_1
-```
 
 Registry and proxy are successfully up and running
 ```
@@ -43,7 +36,7 @@ curl http://cloud.cluster.local:5000/v2/
 설정 초기화 및 확인
 ```
 sudo tc qdisc del dev ens33 root
-sudo tc -s qdisc ls dev wlan0
+sudo tc -s qdisc ls dev ens33
 ```
 RTT 확인
 ```
