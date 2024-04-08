@@ -54,4 +54,10 @@ sudo tc qdisc add dev ens33 root netem delay 200ms
 rm -rf test-redis-data/
 sudo ctr container rm instance3
 sudo ./demo/reset.sh
-sudo systemc행
+sudo systemctl start starlight containerd
+```
+
+#### 실험 
+RTT=100ms부터 100ms 단위로 1000ms까지 증가시키면서 redis 6.2.1 컨테이너의 배포 속도를 측정함
+
+
