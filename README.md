@@ -78,4 +78,4 @@ RTT=100ms부터 100ms 단위로 1000ms까지 증가시키면서 redis 6.2.1 컨�
 
 
 
-<a name="footnote_1">1</a>: https://en.wikipedia.org/wiki/UnionFS
+<a name="footnote_1">[1]</a>: https://en.wikipedia.org/wiki/UnionFS
