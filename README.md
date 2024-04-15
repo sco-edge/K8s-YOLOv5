@@ -1,6 +1,16 @@
 # Starlight installation
 https://github.com/mc256/starlight
 
+## 배경
+
+Docker uses file systems inspired by Unionfs, such as Aufs, to layer Docker images. As actions are done to a base image, layers are created and documented, such that each layer fully describes how to recreate an action. This strategy enables Docker's lightweight images, as only layer updates need to be propagated (compared to full VMs, for example). <sup>[1](#footnote_1)</sup>
+
+
+
+
+
+
+
 ## 설치 환경
 2 VM  
 Cloud  
@@ -65,3 +75,7 @@ RTT=100ms부터 100ms 단위로 1000ms까지 증가시키면서 redis 6.2.1 컨�
 |704ms|4.847s|
 
 `docker pull redis:6.2.1`은 RTT=4ms에서 35.894s의 시간이 소요됨
+
+
+
+<a name="footnote_1">1</a>: https://en.wikipedia.org/wiki/UnionFS
