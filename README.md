@@ -43,8 +43,8 @@ WSL
 
 설정 초기화 및 확인
 ```
-sudo tc qdisc del dev ens33 root
-sudo tc -s qdisc ls dev ens33
+sudo tc qdisc del dev enp0s3 root
+sudo tc -s qdisc ls dev enp0s3
 ```
 RTT 확인
 ```
@@ -52,7 +52,7 @@ ping -c 3 8.8.8.8
 ```
 RTT 설정(200ms)
 ```
-sudo tc qdisc add dev ens33 root netem delay 200ms
+sudo tc qdisc add dev enp0s3 root netem delay 200ms
 ```
 
 
